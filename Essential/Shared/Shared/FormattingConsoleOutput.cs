@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace User
+
+namespace Shared
 {
-    abstract class FormattingConsoleOutput
+    public abstract class FormattingConsoleOutput
     {
         public static void ColorsConsoleOutput(string text, ConsoleColor color)
         {

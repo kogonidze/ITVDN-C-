@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace User
+namespace Shared
 {
-    abstract class Menu
+    public abstract class Menu
     {
         public static void StartWork(string menuText, params Action[] actions)
         {
@@ -15,6 +11,11 @@ namespace User
                 DisplayMenu(menuText);
                 HandleSelectedMenuItem(actions);
             }
+        }
+
+        private static void DisplayMenu(string menuText)
+        {
+            Console.WriteLine(menuText);
         }
 
         private static void HandleSelectedMenuItem(Action[] actions)
@@ -30,11 +31,6 @@ namespace User
                 Console.WriteLine("You input incorrect menu item value!");
                 Console.Clear();
             }
-        }
-
-        private static void DisplayMenu(string menuText)
-        {
-            Console.WriteLine(menuText);
         }
 
         private static void WaitForUserAnswer()
