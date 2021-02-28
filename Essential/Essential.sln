@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{8EC640
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared\Shared.csproj", "{01EC4818-0F8A-4895-B8B6-978CF895A4F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter", "002_Classes\CurrencyConverter\CurrencyConverter.csproj", "{3587F642-7C98-4B5F-9988-52E7DFE8380E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{01EC4818-0F8A-4895-B8B6-978CF895A4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01EC4818-0F8A-4895-B8B6-978CF895A4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01EC4818-0F8A-4895-B8B6-978CF895A4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3587F642-7C98-4B5F-9988-52E7DFE8380E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3587F642-7C98-4B5F-9988-52E7DFE8380E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3587F642-7C98-4B5F-9988-52E7DFE8380E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3587F642-7C98-4B5F-9988-52E7DFE8380E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{C7800389-1E8E-41B0-A542-1FCCF564602D} = {B6E6A486-CCBD-4AC4-B797-8F795FFC5DE4}
 		{823E835A-A8C2-4310-8E01-0FA0F3F95408} = {4C9FD22E-A00B-4646-BB4A-978E2DECA6A8}
 		{01EC4818-0F8A-4895-B8B6-978CF895A4F0} = {8EC64030-D205-4AAA-9343-6A093D724068}
+		{3587F642-7C98-4B5F-9988-52E7DFE8380E} = {4C9FD22E-A00B-4646-BB4A-978E2DECA6A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
