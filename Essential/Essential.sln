@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryTaxes", "002_Classes\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice", "002_Classes\Invoice\Invoice.csproj", "{71A6DCB8-74F0-4BFC-B6FF-C92BDAB1803A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Printer", "003_Inheritance\Printer\Printer.csproj", "{FDBD6AD4-B6A7-4FA9-A00E-122C2462DDBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003_Inheritance", "003_Inheritance", "{21DC4FD3-D448-4991-B0E1-42AFA1D8395C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{71A6DCB8-74F0-4BFC-B6FF-C92BDAB1803A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A6DCB8-74F0-4BFC-B6FF-C92BDAB1803A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A6DCB8-74F0-4BFC-B6FF-C92BDAB1803A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBD6AD4-B6A7-4FA9-A00E-122C2462DDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBD6AD4-B6A7-4FA9-A00E-122C2462DDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBD6AD4-B6A7-4FA9-A00E-122C2462DDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBD6AD4-B6A7-4FA9-A00E-122C2462DDBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +91,7 @@ Global
 		{3587F642-7C98-4B5F-9988-52E7DFE8380E} = {4C9FD22E-A00B-4646-BB4A-978E2DECA6A8}
 		{1D1DCBB9-250C-4A5C-A68F-EEDA3B3F2B2B} = {4C9FD22E-A00B-4646-BB4A-978E2DECA6A8}
 		{71A6DCB8-74F0-4BFC-B6FF-C92BDAB1803A} = {4C9FD22E-A00B-4646-BB4A-978E2DECA6A8}
+		{FDBD6AD4-B6A7-4FA9-A00E-122C2462DDBF} = {21DC4FD3-D448-4991-B0E1-42AFA1D8395C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
