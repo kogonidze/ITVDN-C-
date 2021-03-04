@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "004_Abstraction", "004_Abst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document", "004_Abstraction\Document\Document.csproj", "{AD4ACDF3-02D3-4995-8C1C-46FC994000CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentHandler", "004_Abstraction\DocumentHandler\DocumentHandler.csproj", "{D087B250-BB52-4865-B83A-BA62FA650DDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{AD4ACDF3-02D3-4995-8C1C-46FC994000CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD4ACDF3-02D3-4995-8C1C-46FC994000CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD4ACDF3-02D3-4995-8C1C-46FC994000CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D087B250-BB52-4865-B83A-BA62FA650DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D087B250-BB52-4865-B83A-BA62FA650DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D087B250-BB52-4865-B83A-BA62FA650DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D087B250-BB52-4865-B83A-BA62FA650DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +128,7 @@ Global
 		{329421D5-DE1A-4F1B-8298-50E8661DDD90} = {21DC4FD3-D448-4991-B0E1-42AFA1D8395C}
 		{263AEFDA-1434-4B07-9D45-69C45D5420DA} = {21DC4FD3-D448-4991-B0E1-42AFA1D8395C}
 		{AD4ACDF3-02D3-4995-8C1C-46FC994000CC} = {FAA97D10-E754-4C10-A3F3-205B55E05303}
+		{D087B250-BB52-4865-B83A-BA62FA650DDE} = {FAA97D10-E754-4C10-A3F3-205B55E05303}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
