@@ -49,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "005_ArraysAndIndexers", "00
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageDictionary", "005_ArraysAndIndexers\LanguageDictionary\LanguageDictionary.csproj", "{C0448EB1-28AE-438F-A5FB-97650411486B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithArray", "005_ArraysAndIndexers\WorkWithArray\WorkWithArray.csproj", "{A3B659EE-0757-4B10-827E-051AD52146E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{C0448EB1-28AE-438F-A5FB-97650411486B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0448EB1-28AE-438F-A5FB-97650411486B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0448EB1-28AE-438F-A5FB-97650411486B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B659EE-0757-4B10-827E-051AD52146E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B659EE-0757-4B10-827E-051AD52146E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B659EE-0757-4B10-827E-051AD52146E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B659EE-0757-4B10-827E-051AD52146E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -145,6 +151,7 @@ Global
 		{D087B250-BB52-4865-B83A-BA62FA650DDE} = {FAA97D10-E754-4C10-A3F3-205B55E05303}
 		{09BD2EF7-2799-4B8C-8C91-C8CE9E8A9601} = {FAA97D10-E754-4C10-A3F3-205B55E05303}
 		{C0448EB1-28AE-438F-A5FB-97650411486B} = {55D56B2A-7779-44AB-8B36-4F235BACB380}
+		{A3B659EE-0757-4B10-827E-051AD52146E8} = {55D56B2A-7779-44AB-8B36-4F235BACB380}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
