@@ -67,6 +67,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "007_Structures", "007_Struc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notebook", "007_Structures\Notebook\Notebook.csproj", "{5B59741A-B2D1-4B59-8A7A-FC2398367FEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Train", "007_Structures\Train\Train.csproj", "{9D4AC32B-61DE-4E2D-B4C7-402BE65C1E53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -169,6 +171,10 @@ Global
 		{5B59741A-B2D1-4B59-8A7A-FC2398367FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B59741A-B2D1-4B59-8A7A-FC2398367FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B59741A-B2D1-4B59-8A7A-FC2398367FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4AC32B-61DE-4E2D-B4C7-402BE65C1E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4AC32B-61DE-4E2D-B4C7-402BE65C1E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4AC32B-61DE-4E2D-B4C7-402BE65C1E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4AC32B-61DE-4E2D-B4C7-402BE65C1E53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -198,6 +204,7 @@ Global
 		{96CF8CDF-C110-4795-8860-CE39ABFE3FF7} = {EA84E8F4-2FD0-4C24-9EC1-52E179B83895}
 		{88349F8F-CA77-4038-8E9D-BF1B166B728D} = {EA84E8F4-2FD0-4C24-9EC1-52E179B83895}
 		{5B59741A-B2D1-4B59-8A7A-FC2398367FEF} = {C1DBED00-C6D8-4438-8C3F-096A90D289E3}
+		{9D4AC32B-61DE-4E2D-B4C7-402BE65C1E53} = {C1DBED00-C6D8-4438-8C3F-096A90D289E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
