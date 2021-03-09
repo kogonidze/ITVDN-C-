@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AverageAnonymousFunc", "009
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArithmeticOperatorsInAnonymousMethods", "009_Delegates\ArithmeticOperatorsInAnonymousMethods\ArithmeticOperatorsInAnonymousMethods.csproj", "{9BCD106D-3755-4ED7-9156-7E7E71E0B245}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesArray", "009_Delegates\DelegatesArray\DelegatesArray.csproj", "{01D0D2ED-A54D-4AF4-AB66-D9F0B4447295}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -215,6 +217,10 @@ Global
 		{9BCD106D-3755-4ED7-9156-7E7E71E0B245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BCD106D-3755-4ED7-9156-7E7E71E0B245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BCD106D-3755-4ED7-9156-7E7E71E0B245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D0D2ED-A54D-4AF4-AB66-D9F0B4447295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D0D2ED-A54D-4AF4-AB66-D9F0B4447295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D0D2ED-A54D-4AF4-AB66-D9F0B4447295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D0D2ED-A54D-4AF4-AB66-D9F0B4447295}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -251,6 +257,7 @@ Global
 		{98D2AF87-8411-4A6B-B7B9-137B6259859A} = {295A0D05-31C7-4DEF-8185-788F7B770323}
 		{8BA7CF19-DA73-4294-B1A2-7E0C0428B1F7} = {328DA1F8-87FF-4455-8DC0-1706A2144661}
 		{9BCD106D-3755-4ED7-9156-7E7E71E0B245} = {328DA1F8-87FF-4455-8DC0-1706A2144661}
+		{01D0D2ED-A54D-4AF4-AB66-D9F0B4447295} = {328DA1F8-87FF-4455-8DC0-1706A2144661}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
