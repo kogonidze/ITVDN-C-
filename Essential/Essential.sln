@@ -91,6 +91,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "010_Generics", "010_Generic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodGenerics", "010_Generics\FactoryMethodGenerics\FactoryMethodGenerics.csproj", "{50465409-8CEB-49BA-9698-9E10C6202F04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyList", "010_Generics\MyList\MyList.csproj", "{A17C80DF-278B-4234-8F26-54D00C87DCF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -229,6 +231,10 @@ Global
 		{50465409-8CEB-49BA-9698-9E10C6202F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50465409-8CEB-49BA-9698-9E10C6202F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50465409-8CEB-49BA-9698-9E10C6202F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17C80DF-278B-4234-8F26-54D00C87DCF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17C80DF-278B-4234-8F26-54D00C87DCF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17C80DF-278B-4234-8F26-54D00C87DCF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17C80DF-278B-4234-8F26-54D00C87DCF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -267,6 +273,7 @@ Global
 		{9BCD106D-3755-4ED7-9156-7E7E71E0B245} = {328DA1F8-87FF-4455-8DC0-1706A2144661}
 		{01D0D2ED-A54D-4AF4-AB66-D9F0B4447295} = {328DA1F8-87FF-4455-8DC0-1706A2144661}
 		{50465409-8CEB-49BA-9698-9E10C6202F04} = {F36D7474-5EF9-4AB5-8F80-3D46F75109AA}
+		{A17C80DF-278B-4234-8F26-54D00C87DCF7} = {F36D7474-5EF9-4AB5-8F80-3D46F75109AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
