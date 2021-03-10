@@ -20,6 +20,11 @@ namespace MyList
 
             Console.WriteLine(@int.Count);
             Console.WriteLine($"{@int[5]} {@int[1]}");
+            foreach (var item in @int.GetArray())
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
 
             var @string = new MyList<string>();
             @string.Add("Hello");
@@ -28,6 +33,12 @@ namespace MyList
 
             Console.WriteLine(@string.Count);
             Console.WriteLine(@string[0]);
+
+            foreach (var item in @string.GetArray())
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
 
             Console.ReadKey();
         }
