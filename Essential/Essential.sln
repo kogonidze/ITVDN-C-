@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithArrayList", "011_Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarCollection", "011_Generics(Constraints)\CarCollection\CarCollection.csproj", "{82B24A02-A5AE-4980-8FC4-65321FC46607}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "011_Generics(Constraints)\Dictionary\Dictionary.csproj", "{1534BBE5-EF04-4FC7-A808-61175030054A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -255,6 +257,10 @@ Global
 		{82B24A02-A5AE-4980-8FC4-65321FC46607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82B24A02-A5AE-4980-8FC4-65321FC46607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82B24A02-A5AE-4980-8FC4-65321FC46607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1534BBE5-EF04-4FC7-A808-61175030054A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1534BBE5-EF04-4FC7-A808-61175030054A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1534BBE5-EF04-4FC7-A808-61175030054A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1534BBE5-EF04-4FC7-A808-61175030054A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -297,6 +303,7 @@ Global
 		{EF96FF02-86FC-4A33-98F2-3F353BA858EE} = {F36D7474-5EF9-4AB5-8F80-3D46F75109AA}
 		{B794E49A-5C04-4F33-973D-F8E375CCF6B1} = {31CFEC81-7EFB-41B7-B6E0-98F63295FDD9}
 		{82B24A02-A5AE-4980-8FC4-65321FC46607} = {31CFEC81-7EFB-41B7-B6E0-98F63295FDD9}
+		{1534BBE5-EF04-4FC7-A808-61175030054A} = {31CFEC81-7EFB-41B7-B6E0-98F63295FDD9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
