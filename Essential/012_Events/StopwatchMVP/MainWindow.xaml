@@ -1,0 +1,15 @@
+﻿<Window x:Class="StopwatchMVP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StopwatchMVP"
+        mc:Ignorable="d"
+        Title="Stopwatch" Height="300" Width="320">
+    <Grid>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="81" Name="startButton" Click="startButton_Click" Height="41"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Margin="115,197,0,0" VerticalAlignment="Top" Width="79" Name ="stopButton" Click="stopButton_Click" Height="41" RenderTransformOrigin="0.392,0.537"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="218,197,0,0" VerticalAlignment="Top" Width="75" Name="resetButton" Click="resetButton_Click" Height="41" RenderTransformOrigin="0.307,0.439" />
+        <Label  HorizontalAlignment="Left" Margin="36,54,0,0" VerticalAlignment="Top" Width="244" Height="104" FontSize="60" HorizontalContentAlignment="Center" Name="timeLabel" />
+    </Grid>
+</Window>

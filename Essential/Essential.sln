@@ -105,6 +105,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "011_Generics(
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList", "011_Generics(Constraints)\ArrayList\ArrayList.csproj", "{D102927E-3D07-4667-B0E3-7FC7A6C90E91}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "012_Events", "012_Events", "{C0F10B85-A079-486E-8EE3-59C338B5ECE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopwatchMVP", "012_Events\StopwatchMVP\StopwatchMVP.csproj", "{5FE65372-6D91-4F22-BCAA-0D921BEDE591}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +271,10 @@ Global
 		{D102927E-3D07-4667-B0E3-7FC7A6C90E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D102927E-3D07-4667-B0E3-7FC7A6C90E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D102927E-3D07-4667-B0E3-7FC7A6C90E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE65372-6D91-4F22-BCAA-0D921BEDE591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE65372-6D91-4F22-BCAA-0D921BEDE591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE65372-6D91-4F22-BCAA-0D921BEDE591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE65372-6D91-4F22-BCAA-0D921BEDE591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -311,6 +319,7 @@ Global
 		{82B24A02-A5AE-4980-8FC4-65321FC46607} = {31CFEC81-7EFB-41B7-B6E0-98F63295FDD9}
 		{1534BBE5-EF04-4FC7-A808-61175030054A} = {31CFEC81-7EFB-41B7-B6E0-98F63295FDD9}
 		{D102927E-3D07-4667-B0E3-7FC7A6C90E91} = {31CFEC81-7EFB-41B7-B6E0-98F63295FDD9}
+		{5FE65372-6D91-4F22-BCAA-0D921BEDE591} = {C0F10B85-A079-486E-8EE3-59C338B5ECE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
