@@ -115,6 +115,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "013_Threads", "013_Threads"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveFunctionThreads", "013_Threads\RecursiveFunctionThreads\RecursiveFunctionThreads.csproj", "{40C6348E-5B30-4E33-B408-E12A6C50363D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FallingLetters", "013_Threads\FallingLetters\FallingLetters.csproj", "{43F78884-90CF-4A27-BE88-004DFCA222E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -289,6 +291,10 @@ Global
 		{40C6348E-5B30-4E33-B408-E12A6C50363D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C6348E-5B30-4E33-B408-E12A6C50363D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C6348E-5B30-4E33-B408-E12A6C50363D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F78884-90CF-4A27-BE88-004DFCA222E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F78884-90CF-4A27-BE88-004DFCA222E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F78884-90CF-4A27-BE88-004DFCA222E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F78884-90CF-4A27-BE88-004DFCA222E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -336,6 +342,7 @@ Global
 		{5FE65372-6D91-4F22-BCAA-0D921BEDE591} = {C0F10B85-A079-486E-8EE3-59C338B5ECE0}
 		{B92EFE29-6DCF-495A-9A13-F90CE15E9273} = {C0F10B85-A079-486E-8EE3-59C338B5ECE0}
 		{40C6348E-5B30-4E33-B408-E12A6C50363D} = {D91A4744-C118-4D8C-B73C-98CCD066C28E}
+		{43F78884-90CF-4A27-BE88-004DFCA222E7} = {D91A4744-C118-4D8C-B73C-98CCD066C28E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
