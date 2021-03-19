@@ -45,7 +45,15 @@ namespace FallingLetters
 
             for (int i = 0; i < initialSteps.Length; i++)
             {
-                newInitialSteps[i] = initialSteps[i] + 1;
+                if (initialSteps[i] + 1 == height)
+                {
+                    newInitialSteps[i] = (initialSteps[i] + 1) % 30;
+                }
+                else
+                {
+                    newInitialSteps[i] = initialSteps[i] + 1;
+                }
+
             }
 
             initialSteps = newInitialSteps;
@@ -62,7 +70,6 @@ namespace FallingLetters
         {
             var step = (int[])obj;
 
-            //Thread.Sleep(500);
             Console.Clear();
             char[,] array = new char[height, width];
 
@@ -72,12 +79,23 @@ namespace FallingLetters
                 {
                     if (i + 1 < arrSizes[j])
                     {
-                        array[i + step[j], j] = GenerateLetter();
+                        if (i + step[j] < height)
+                        {
+                            array[i + step[j], j] = GenerateLetter();
+                        }
+                        else if (i + step[j]%height == height)
+                        {
+                            array[0, j] = GenerateLetter();
+                        }
+                        else
+                        {
+                            array[i + (step[j]-height), j] = GenerateLetter();
+                        }
                     }
                 }
             }
 
-            IncrementInitialSteps();
+            obj = IncrementInitialSteps();
 
             for (int i = 0; i < height; i++)
             {
@@ -111,14 +129,11 @@ namespace FallingLetters
                 }
             }
 
-            for (int i = 0; i < height; i++)
+            while (true)
             {
                 Thread.Sleep(500);
                 new Thread(MoveLetters).Start(initialSteps);
-                Console.ReadKey();
             }
-
-            Console.WriteLine($"{ width} {height}");
 
             Console.ReadKey();
         }
