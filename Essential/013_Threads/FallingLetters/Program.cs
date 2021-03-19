@@ -14,6 +14,7 @@ namespace FallingLetters
         public static int height = Console.WindowHeight;
         public static int[] arrSizes = GenerateArrSizes();
         public static int[] initialSteps = GenerateInitialSteps();
+        public static object obj = new object();
 
         static int[] GenerateArrSizes()
         {
@@ -97,19 +98,59 @@ namespace FallingLetters
 
             obj = IncrementInitialSteps();
 
+            PrintArray(array);
+        }
+
+        static void PrintArray(char[,] array)
+        {
             for (int i = 0; i < height; i++)
             {
                 for (int j = 0; j < width; j++)
                 {
-                    Console.Write(array[i, j]);
+                    if (CheckIfFirstSymbolInChain(array, i, j))
+                    {
+                        lock(obj)
+                        {
+                            ColouredOutputInConsole(array[i, j], ConsoleColor.White);
+                        }
+                    }
+                    else if (CheckIfSecondSymbolInChain(array, i, j))
+                    {
+                        lock (obj)
+                        {
+                            ColouredOutputInConsole(array[i, j], ConsoleColor.Green);
+                        }
+                    }
+                    else
+                    {
+                        lock (obj)
+                        {
+                            ColouredOutputInConsole(array[i, j], ConsoleColor.DarkGreen);
+                        }
+                    }
                 }
             }
         }
 
-        static void Main(string[] args)
+        static bool CheckIfFirstSymbolInChain(char[,] array, int i, int j)
         {
-            var array = new char[height, width];
+            return array[(i + 1) % height, j] == 0;
+        }
 
+        static bool CheckIfSecondSymbolInChain(char[,] array, int i, int j)
+        {
+            return array[(i + 2) % height, j] == 0 && array[(i + 1) % height, j] != 0;
+        }
+
+        static void ColouredOutputInConsole(char ch, ConsoleColor color)
+        {
+            Console.ForegroundColor = color;
+            Console.Write(ch);
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
+
+        static void InitializeArray(char[,] array)
+        {
             for (int i = 0; i < height; i++)
             {
                 for (int j = 0; j < width; j++)
@@ -120,22 +161,21 @@ namespace FallingLetters
                     }
                 }
             }
+        }
 
-            for (int i = 0; i < height; i++)
-            {
-                for (int j = 0; j < width; j++)
-                {
-                    Console.Write(array[i,j]);
-                }
-            }
+        static void Main(string[] args)
+        {
+            var array = new char[height, width];
+
+            InitializeArray(array);
+
+            PrintArray(array);
 
             while (true)
             {
-                Thread.Sleep(500);
+                Thread.Sleep(1000);
                 new Thread(MoveLetters).Start(initialSteps);
             }
-
-            Console.ReadKey();
         }
     }
 }
