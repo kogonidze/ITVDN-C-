@@ -20,7 +20,7 @@ namespace FallingLetters.Helpers
 
             for (int i = 0; i < arrSizes.Length; i++)
             {
-                arrSizes[i] = rand.Next(3, 10);
+                arrSizes[i] = rand.Next(3, 5);
             }
 
             return arrSizes;
@@ -32,7 +32,7 @@ namespace FallingLetters.Helpers
 
             for (int i = 0; i < length; i++)
             {
-                initialSteps[i] = rand.Next(1, 20);
+                initialSteps[i] = rand.Next(1, 12);
             }
 
             return initialSteps;

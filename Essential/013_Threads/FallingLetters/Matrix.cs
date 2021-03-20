@@ -13,7 +13,9 @@ namespace FallingLetters
         public int width;
         public int height;
         public int[] arrSizes;
+        public int[] arrSizes2;
         public int[] initialSteps;
+        public int[] initialSteps2;
 
         private static Matrix matrix;
 
@@ -23,6 +25,7 @@ namespace FallingLetters
             height = Console.WindowHeight;
             array = new char[height, width];
             arrSizes = RandomGeneratorHelper.GenerateChainSizes();
+            arrSizes2 = RandomGeneratorHelper.GenerateChainSizes();
         }
 
         public static Matrix GetMatrix()
@@ -39,6 +42,10 @@ namespace FallingLetters
         void ConfigureMatrix()
         {
             matrix.initialSteps = RandomGeneratorHelper.GenerateInitialSteps(matrix.arrSizes.Length);
+            matrix.initialSteps2 = RandomGeneratorHelper.GenerateInitialSteps(matrix.arrSizes.Length)
+                .Zip(matrix.initialSteps, (a, b) => a + b + 1)
+                .ToArray();
+
             InitializeMatrix(matrix.array);
             PrintMatrix(matrix.array);
         }
@@ -52,36 +59,38 @@ namespace FallingLetters
                     if (i < matrix.arrSizes[j])
                     {
                         array[i + matrix.initialSteps[j], j] = RandomGeneratorHelper.GenerateLetter();
+                        array[i + matrix.initialSteps2[j], j] = RandomGeneratorHelper.GenerateLetter();
                     }
                 }
             }
         }
 
-        static int[] IncrementInitialSteps()
+        static int[] IncrementInitialSteps(int[] initialSteps)
         {
             var newInitialSteps = new int[Console.WindowWidth];
 
-            for (int i = 0; i < matrix.initialSteps.Length; i++)
+            for (int i = 0; i < initialSteps.Length; i++)
             {
-                if (matrix.initialSteps[i] + 1 == matrix.height)
+                if (initialSteps[i] + 1 == matrix.height)
                 {
-                    newInitialSteps[i] = (matrix.initialSteps[i] + 1) % 30;
+                    newInitialSteps[i] = (initialSteps[i] + 1) % 30;
                 }
                 else
                 {
-                    newInitialSteps[i] = matrix.initialSteps[i] + 1;
+                    newInitialSteps[i] = initialSteps[i] + 1;
                 }
 
             }
 
-            matrix.initialSteps = newInitialSteps;
+            initialSteps = newInitialSteps;
 
-            return matrix.initialSteps;
+            return initialSteps;
         }
 
-        public static void MoveLetters(object obj)
+        public static void MoveLetters()
         {
-            var step = (int[])obj;
+            var step = (int[])matrix.initialSteps;
+            var step2 = (int[])matrix.initialSteps2;
 
             Console.Clear();
             char[,] array = new char[matrix.height, matrix.width];
@@ -104,11 +113,25 @@ namespace FallingLetters
                         {
                             array[i + (step[j] - matrix.height), j] = RandomGeneratorHelper.GenerateLetter();
                         }
+
+                        if (i + step2[j] < matrix.height)
+                        {
+                            array[i + step2[j], j] = RandomGeneratorHelper.GenerateLetter();
+                        }
+                        else if (i + step2[j] % matrix.height == matrix.height)
+                        {
+                            array[0, j] = RandomGeneratorHelper.GenerateLetter();
+                        }
+                        else
+                        {
+                            array[i + (step2[j] - matrix.height), j] = RandomGeneratorHelper.GenerateLetter();
+                        }
                     }
                 }
             }
 
-            obj = IncrementInitialSteps();
+            matrix.initialSteps = IncrementInitialSteps(matrix.initialSteps);
+            matrix.initialSteps2 = IncrementInitialSteps(matrix.initialSteps2);
 
             PrintMatrix(array);
         }

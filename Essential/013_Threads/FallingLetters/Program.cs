@@ -16,8 +16,8 @@ namespace FallingLetters
             var matrix = Matrix.GetMatrix();
             while (true)
             {
-                Thread.Sleep(1000);
-                new Thread(Matrix.MoveLetters).Start(matrix.initialSteps);
+                Thread.Sleep(1500);
+                new Thread(Matrix.MoveLetters).Start();
             }
         }
     }
