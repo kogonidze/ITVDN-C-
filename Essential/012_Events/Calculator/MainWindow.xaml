@@ -1,0 +1,29 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="400" Width="350">
+    <Grid RenderTransformOrigin="0.506,0.621">
+        <Button Content="1" HorizontalAlignment="Left" Margin="34,126,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button1" Click="button1_Click"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="116,126,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button2" Click="button2_Click"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="200,126,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button3" Click="button3_Click"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="34,189,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button4" Click="button4_Click"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="116,189,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button5" Click="button5_Click"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="200,189,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button6" Click="button6_Click"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="34,245,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button7" Click="button7_Click"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="116,245,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button8" Click="button8_Click"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="200,245,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button9" Click="button9_Click"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="34,300,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="button0" Click="button0_Click"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="200,300,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="buttonEquals" Click="buttonEquals_Click"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="274,300,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="buttonDiv" Click="buttonDiv_Click"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="274,189,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="buttonDiff" Click="buttonDiff_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="274,126,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="buttonAdd" Click="buttonAdd_Click"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="274,245,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="buttonMult" Click="buttonMult_Click"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top" Width="286" Height="76" Name="calculatorLabel" FontWeight="Bold" FontSize="40" HorizontalContentAlignment="Center"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="116,300,0,0" VerticalAlignment="Top" Width="46" Height="38" Name="buttonClear" Click="buttonClear_Click"/>
+
+    </Grid>
+</Window>
