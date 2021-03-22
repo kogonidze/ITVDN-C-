@@ -37,6 +37,14 @@ namespace MyList
                 Console.WriteLine($"{item.Vendor} {item.Model} {item.YearOfProduction}");
             }
 
+            var myCars = listOfCars.GetArray<MyCar>();
+            Console.WriteLine(new string('-', 50));
+
+            foreach (var item in myCars)
+            {
+                Console.WriteLine($"{item.Vendor} {item.Model} {item.YearOfProduction}");
+            }
+
             Console.ReadKey();
         }
     }

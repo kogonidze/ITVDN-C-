@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="MyCar.cs" />
     <Compile Include="MyList.cs" />
+    <Compile Include="MyListExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

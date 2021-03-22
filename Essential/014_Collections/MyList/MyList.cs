@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyList
 {
-    class MyList<T>
+    class MyList<T> : IEnumerable<T>
     {
         private T[] Elements { get; set; }
         private int position = -1;
@@ -88,6 +88,11 @@ namespace MyList
             }
 
 
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }
