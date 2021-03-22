@@ -123,6 +123,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyList", "014_Collections\M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetEvenNumbers", "014_Collections\GetEvenNumbers\GetEvenNumbers.csproj", "{8E07B268-E21E-4238-A2C2-42FF3235CEB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDictionary", "014_Collections\MyDictionary\MyDictionary.csproj", "{64BFA6D1-A66C-4ED1-A93D-EF823990BDDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -309,6 +311,10 @@ Global
 		{8E07B268-E21E-4238-A2C2-42FF3235CEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E07B268-E21E-4238-A2C2-42FF3235CEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E07B268-E21E-4238-A2C2-42FF3235CEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BFA6D1-A66C-4ED1-A93D-EF823990BDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BFA6D1-A66C-4ED1-A93D-EF823990BDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BFA6D1-A66C-4ED1-A93D-EF823990BDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BFA6D1-A66C-4ED1-A93D-EF823990BDDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -359,6 +365,7 @@ Global
 		{43F78884-90CF-4A27-BE88-004DFCA222E7} = {D91A4744-C118-4D8C-B73C-98CCD066C28E}
 		{780B3310-0AD2-4CA5-915A-2ECC42628244} = {BC2EA836-C52A-4D17-B4CD-1041BF15BE72}
 		{8E07B268-E21E-4238-A2C2-42FF3235CEB1} = {BC2EA836-C52A-4D17-B4CD-1041BF15BE72}
+		{64BFA6D1-A66C-4ED1-A93D-EF823990BDDD} = {BC2EA836-C52A-4D17-B4CD-1041BF15BE72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
