@@ -129,6 +129,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "015_Exceptions", "015_Excep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "015_Exceptions\Calculator\Calculator.csproj", "{3F379DDE-2B1B-42A2-867A-8707C9DA291F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "015_Exceptions\Worker\Worker.csproj", "{DFF27D85-DD2B-42C8-9A5E-91A86CA7DEE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -323,6 +325,10 @@ Global
 		{3F379DDE-2B1B-42A2-867A-8707C9DA291F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F379DDE-2B1B-42A2-867A-8707C9DA291F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F379DDE-2B1B-42A2-867A-8707C9DA291F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF27D85-DD2B-42C8-9A5E-91A86CA7DEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF27D85-DD2B-42C8-9A5E-91A86CA7DEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF27D85-DD2B-42C8-9A5E-91A86CA7DEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF27D85-DD2B-42C8-9A5E-91A86CA7DEE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -375,6 +381,7 @@ Global
 		{8E07B268-E21E-4238-A2C2-42FF3235CEB1} = {BC2EA836-C52A-4D17-B4CD-1041BF15BE72}
 		{64BFA6D1-A66C-4ED1-A93D-EF823990BDDD} = {BC2EA836-C52A-4D17-B4CD-1041BF15BE72}
 		{3F379DDE-2B1B-42A2-867A-8707C9DA291F} = {E9FCA7A2-2D82-44A0-95A5-DCEEB927A559}
+		{DFF27D85-DD2B-42C8-9A5E-91A86CA7DEE6} = {E9FCA7A2-2D82-44A0-95A5-DCEEB927A559}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
