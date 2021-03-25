@@ -141,6 +141,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Block", "016_Operators\Bloc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "House", "016_Operators\House\House.csproj", "{66CF597F-20EF-45E2-8318-F99E9672DA00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "017_Anonymous_LINQ_dynamic", "017_Anonymous_LINQ_dynamic", "{6E9E37A4-B9B8-48C2-83D9-06C2FCB5E981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorDynamic", "017_Anonymous_LINQ_dynamic\CalculatorDynamic\CalculatorDynamic.csproj", "{E996223E-0982-40D2-8CD1-A0A73C26278F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -355,6 +359,10 @@ Global
 		{66CF597F-20EF-45E2-8318-F99E9672DA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66CF597F-20EF-45E2-8318-F99E9672DA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66CF597F-20EF-45E2-8318-F99E9672DA00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E996223E-0982-40D2-8CD1-A0A73C26278F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E996223E-0982-40D2-8CD1-A0A73C26278F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E996223E-0982-40D2-8CD1-A0A73C26278F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E996223E-0982-40D2-8CD1-A0A73C26278F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -412,6 +420,7 @@ Global
 		{125D106F-9672-4495-8D22-63F8697540DB} = {8187FCED-A36A-40E6-9B95-6ADE96CC0833}
 		{33558A9D-979D-4315-A1C8-62B14FFBFABF} = {8187FCED-A36A-40E6-9B95-6ADE96CC0833}
 		{66CF597F-20EF-45E2-8318-F99E9672DA00} = {8187FCED-A36A-40E6-9B95-6ADE96CC0833}
+		{E996223E-0982-40D2-8CD1-A0A73C26278F} = {6E9E37A4-B9B8-48C2-83D9-06C2FCB5E981}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
