@@ -25,10 +25,6 @@ namespace EnglishToRussianDictionary
 
         static void Main(string[] args)
         {
-            var dict = GenerateDictionary();
-            var orderedDIct = from dynamic word in dict
-                              select new { Eng, Rus };
-
             foreach (dynamic item in GenerateDictionary())
             {
                 Console.WriteLine($"{item.Eng} : {item.Rus}");
