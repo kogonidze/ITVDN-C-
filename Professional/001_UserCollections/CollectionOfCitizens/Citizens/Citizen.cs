@@ -63,5 +63,10 @@ namespace CollectionOfCitizens.Citizens
 
             return true;
         }
+
+        public override string ToString()
+        {
+            return $"FirstName: {this.FirstName}, LastName: {this.LastName}, YearOfBirth: {this.YearOfBirth}";
+        }
     }
 }

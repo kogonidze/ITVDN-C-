@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CollectionOfCitizens
 {
-    class CitizenCollection
+    class CitizenCollection : IEnumerable, IEnumerator
     {
         private Citizen[] citizens;
         private int position = -1;
@@ -46,7 +46,7 @@ namespace CollectionOfCitizens
                 Array.Copy(citizens, newCitizens, lastRetireeCitizenIndex + 1);
                 newCitizens[lastRetireeCitizenIndex + 1] = newCitizen;
                 Array.Copy(citizens, lastRetireeCitizenIndex + 1, newCitizens, 
-                    lastRetireeCitizenIndex + 1, Count - (lastRetireeCitizenIndex + 1));
+                    lastRetireeCitizenIndex + 2, Count - (lastRetireeCitizenIndex + 1));
 
                 citizens = newCitizens;
 
@@ -56,7 +56,7 @@ namespace CollectionOfCitizens
             {
                 var newCitizens = new Citizen[Count + 1];
                 Array.Copy(citizens, newCitizens, Count);
-
+                newCitizens[Count] = newCitizen;
                 citizens = newCitizens;
 
                 return Count;
@@ -65,6 +65,11 @@ namespace CollectionOfCitizens
 
         public void Remove()
         {
+            if (citizens.Length == 0)
+            {
+                throw new CitizenCollectionEmptyException();
+            }
+            
             var citizensAfterRemove = new Citizen[Count - 1];
             Array.Copy(citizens, 1, citizensAfterRemove, 0, Count-1);
             citizens = citizensAfterRemove;
@@ -72,6 +77,11 @@ namespace CollectionOfCitizens
 
         public void Remove(Citizen citizen)
         {
+            if (citizens.Length == 0)
+            {
+                throw new CitizenCollectionEmptyException();
+            }
+
             var citizensAfterRemove = new Citizen[Count - 1];
             if (!Contains(citizen, out int indexOfRemovableCitizen))
             {
