@@ -43,6 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitizenCollection.cs" />
+    <Compile Include="Citizens\Citizen.cs" />
+    <Compile Include="Citizens\Retiree.cs" />
+    <Compile Include="Citizens\Student.cs" />
+    <Compile Include="Citizens\Worker.cs" />
+    <Compile Include="Exceptions\CitizenCollectionEmptyException.cs" />
+    <Compile Include="Exceptions\CitizenNotFoundException.cs" />
+    <Compile Include="Exceptions\CitizensDuplicationAttemptException.cs" />
+    <Compile Include="Helper\ErrorMessages.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
