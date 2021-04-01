@@ -18,5 +18,24 @@ namespace WorkWithOrderedDictionary
             LastName = lastName;
             PassportID = passportID;
         }
+
+        public override bool Equals(object obj)
+        {
+            var secondCustomer = obj as Customer;
+
+            return FirstName == secondCustomer.FirstName &&
+                LastName == secondCustomer.LastName &&
+                PassportID == secondCustomer.PassportID;
+        }
+
+        public override int GetHashCode()
+        {
+            return PassportID;
+        }
+
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName}";
+        }
     }
 }

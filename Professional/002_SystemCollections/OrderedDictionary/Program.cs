@@ -16,9 +16,22 @@ namespace WorkWithOrderedDictionary
 
             orderedDict.Add(new Customer("Ivan", "Popov", 1), 1);
             orderedDict.Add(new Customer("Viktor", "Viktorov", 2), 2);
-            orderedDict.Add(new Customer("Viktor", "Viktorov", 2), 3);
+            try
+            {
+                orderedDict.Add(new Customer("Viktor", "Viktorov", 2), 3);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.Message}");
+            }
+            
 
             Console.WriteLine(orderedDict.Contains(new Customer("Viktor", "Viktorov", 2)));
+
+            foreach (var item in orderedDict.Keys)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
         }
