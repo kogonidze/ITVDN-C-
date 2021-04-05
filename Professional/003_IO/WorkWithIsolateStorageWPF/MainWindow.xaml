@@ -1,12 +1,15 @@
 ﻿<Window x:Class="WorkWithIsolateStorageWPF.MainWindow"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkWithIsolateStorageWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Margin="0,0,-6.4,0">
+        <xctk:ColorPicker Name="ColorPicker" Margin="523,50,165,306" SelectedColorChanged="ColorPicker_SelectedColorChanged" RenderTransformOrigin="1.868,0.772" />
+        <Button Name="SaveDataBtn" Content="Save" HorizontalAlignment="Left" Margin="264,50,0,0" VerticalAlignment="Top" Width="99" Click="SaveDataBtn_Click" Height="64"/>
+        <Label Name="ColorLabel" Content="Цвет" HorizontalAlignment="Left" Margin="109,50,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.095,0.34" Height="64"/>
     </Grid>
 </Window>
