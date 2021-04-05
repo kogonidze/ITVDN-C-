@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyAccount", "002_Syste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderedDictionary", "002_SystemCollections\OrderedDictionary\OrderedDictionary.csproj", "{8F56F34F-DA29-40B5-AD93-7DA1E0C08ACF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003_IO", "003_IO", "{73DEF11C-B944-4B5B-AC4B-7EE04327B6AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Create100Folders", "003_IO\Create100Folders\Create100Folders.csproj", "{889EE80F-F840-4854-A293-D432C19F29DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{8F56F34F-DA29-40B5-AD93-7DA1E0C08ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F56F34F-DA29-40B5-AD93-7DA1E0C08ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F56F34F-DA29-40B5-AD93-7DA1E0C08ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{889EE80F-F840-4854-A293-D432C19F29DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889EE80F-F840-4854-A293-D432C19F29DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889EE80F-F840-4854-A293-D432C19F29DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889EE80F-F840-4854-A293-D432C19F29DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +75,7 @@ Global
 		{81ECE532-9FE0-4C95-9E2E-7874C406DE50} = {AC136C42-7ECF-4F45-A19B-EBCDF52E3FD1}
 		{5F0D6E49-7DFF-4FDC-9BB4-441F899DDB92} = {AC136C42-7ECF-4F45-A19B-EBCDF52E3FD1}
 		{8F56F34F-DA29-40B5-AD93-7DA1E0C08ACF} = {AC136C42-7ECF-4F45-A19B-EBCDF52E3FD1}
+		{889EE80F-F840-4854-A293-D432C19F29DE} = {73DEF11C-B944-4B5B-AC4B-7EE04327B6AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15D054F4-B21D-48A8-A04B-1F1F377AAC7A}
