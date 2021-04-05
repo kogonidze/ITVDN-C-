@@ -10,7 +10,7 @@ namespace Create100Folders
     {
         public const string PathRoot = @"C:\";
 
-        public const string ExampleDirName = "Example";
+        public const string ExampleDirName = "Examsple";
 
         public const string PermanentPartOfDirName = "Folder_";
 
