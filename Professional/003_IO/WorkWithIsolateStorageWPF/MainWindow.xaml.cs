@@ -56,9 +56,6 @@ namespace WorkWithIsolateStorageWPF
 
         private void SaveDataBtn_Click(object sender, RoutedEventArgs e)
         {
-            //IsolatedStorageFile userStorage = IsolatedStorageFile.GetUserStoreForAssembly();
-            //IsolatedStorageFileStream userStream = 
-            //    new IsolatedStorageFileStream("ColorSettings.dat", System.IO.FileMode.Create, userStorage);
             userStream =
                new IsolatedStorageFileStream("ColorSettings.dat", System.IO.FileMode.Create, userStorage);
 
@@ -66,6 +63,8 @@ namespace WorkWithIsolateStorageWPF
             {
                 userWriter.WriteLine(ColorPicker.SelectedColor);
             }
+
+            MessageBox.Show("The color was successfully saved!");
         }
     }
 }
