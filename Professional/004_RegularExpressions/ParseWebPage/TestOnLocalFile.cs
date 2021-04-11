@@ -28,10 +28,7 @@ namespace ParseWebPage
         [Test]
         public void FindAllLinks()
         {
-            var allLinks = Regex.Matches(webPageSource, PatternConstants.patternForLinks)
-                .Cast<Match>()
-                .Select(match => match.Value)
-                .ToArray();
+            var allLinks = Program.GetAllMatchesToArray(webPageSource, PatternConstants.patternForLinks);
 
             var expectedResult = new string[] {
                 "http://www.w3.org/1999/xhtml",
@@ -46,10 +43,7 @@ namespace ParseWebPage
         [Test]
         public void FindAllEmails()
         {
-            var allEmails = Regex.Matches(webPageSource, PatternConstants.patternForEmail)
-               .Cast<Match>()
-               .Select(match => match.Value)
-               .ToArray();
+            var allEmails = Program.GetAllMatchesToArray(webPageSource, PatternConstants.patternForEmail);
 
             var expectedResult = new string[]
             {
@@ -65,10 +59,7 @@ namespace ParseWebPage
         [Test]
         public void FindAllPhoneNumbers()
         {
-            var allPhoneNumbers = Regex.Matches(webPageSource, PatternConstants.patternForPhoneNumber)
-               .Cast<Match>()
-               .Select(match => match.Value)
-               .ToArray();
+            var allPhoneNumbers = Program.GetAllMatchesToArray(webPageSource, PatternConstants.patternForPhoneNumber);
 
             var expectedResult = new string[]
             {
