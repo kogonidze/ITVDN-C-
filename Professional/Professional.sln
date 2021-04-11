@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "004_RegularExpressions", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginPassword", "004_RegularExpressions\LoginPassword\LoginPassword.csproj", "{74EDCEEC-6BCB-4268-91F8-7335FA3994B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseWebPage", "004_RegularExpressions\ParseWebPage\ParseWebPage.csproj", "{C70EFC71-662D-4683-88C9-5BF23D02875C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{74EDCEEC-6BCB-4268-91F8-7335FA3994B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74EDCEEC-6BCB-4268-91F8-7335FA3994B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74EDCEEC-6BCB-4268-91F8-7335FA3994B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C70EFC71-662D-4683-88C9-5BF23D02875C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C70EFC71-662D-4683-88C9-5BF23D02875C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C70EFC71-662D-4683-88C9-5BF23D02875C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C70EFC71-662D-4683-88C9-5BF23D02875C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +112,7 @@ Global
 		{C4E3186A-2D32-482C-BBCD-CB4A741809F2} = {73DEF11C-B944-4B5B-AC4B-7EE04327B6AB}
 		{4549F895-DE32-43B0-8034-9C1C401C2844} = {73DEF11C-B944-4B5B-AC4B-7EE04327B6AB}
 		{74EDCEEC-6BCB-4268-91F8-7335FA3994B9} = {8ED857E2-D739-4505-A667-D107F66AEE99}
+		{C70EFC71-662D-4683-88C9-5BF23D02875C} = {8ED857E2-D739-4505-A667-D107F66AEE99}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15D054F4-B21D-48A8-A04B-1F1F377AAC7A}
