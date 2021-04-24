@@ -15,26 +15,12 @@ namespace ParseWebPage
     {
         static void Main(string[] args)
         {
-            var pathForWebSite = ConfigurationManager.AppSettings["WebSitePath"];
+            var pathToWebSite = ConfigurationManager.AppSettings["WebSitePath"];
             var outputFile = ConfigurationManager.AppSettings["OutputFileName"];
-
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(pathForWebSite);
-            string webPageSource = String.Empty;
 
             try
             {
-                using (var response = (HttpWebResponse)request.GetResponse())
-                {
-                    if (response.StatusCode == HttpStatusCode.OK)
-                    {
-                        var receiveStream = response.GetResponseStream();
-
-                        using (var readStream = new StreamReader(receiveStream))
-                        {
-                            webPageSource = readStream.ReadToEnd();
-                        }
-                    }
-                }
+                string webPageSource = GetHTMLCodeOfWebPage(pathToWebSite);
 
                 if (!String.IsNullOrEmpty(webPageSource))
                 {
@@ -44,33 +30,15 @@ namespace ParseWebPage
 
                     using (var writer = new StreamWriter(outputFile, false))
                     {
-                        writer.WriteLine($"[{DateTime.Now}] was parsed site {pathForWebSite}");
-                        writer.WriteLine("Founded links: ");
+                        writer.WriteLine($"[{DateTime.Now}] was parsed site {pathToWebSite}");
 
-                        foreach (var link in allLinks)
-                        {
-                            writer.WriteLine(link);
-                        }
-
-                        writer.WriteLine();
-                        writer.WriteLine("Founded emails: ");
-
-                        foreach (var email in allEmails)
-                        {
-                            writer.WriteLine(email);
-                        }
-
-                        writer.WriteLine();
-                        writer.WriteLine("Founded phone numbers: ");
-
-                        foreach (var phoneNumber in allPhoneNumbers)
-                        {
-                            writer.WriteLine(phoneNumber);
-                        }
+                        WriteInfoToFile(writer, allLinks, MessageConstants.FoundedLinksMessage);
+                        WriteInfoToFile(writer, allEmails, MessageConstants.FoundedEmailsMessage);
+                        WriteInfoToFile(writer, allPhoneNumbers, MessageConstants.FoundedPhoneNumbersMessage);
                     }
                 }
 
-                Console.WriteLine("Finished!");
+                Console.WriteLine(MessageConstants.FinishedMessage);
             }
             catch (Exception e)
             {
@@ -80,12 +48,44 @@ namespace ParseWebPage
             Console.ReadKey();
         }
 
+        public static string GetHTMLCodeOfWebPage(string pathToWebSite)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(pathToWebSite);
+
+            using (var response = (HttpWebResponse)request.GetResponse())
+            {
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var receiveStream = response.GetResponseStream();
+
+                    using (var readStream = new StreamReader(receiveStream))
+                    {
+                        return readStream.ReadToEnd();
+                    }
+                }
+
+                return String.Empty;
+            }
+        }
+
         public static string[] GetAllMatchesToArray(string source, string pattern)
         {
             return Regex.Matches(source, pattern)
                       .Cast<Match>()
                       .Select(match => match.Value)
                       .ToArray();
+        }
+
+        public static void WriteInfoToFile(StreamWriter writer, string[] info, string message)
+        {
+            writer.WriteLine(message);
+
+            foreach (var link in info)
+            {
+                writer.WriteLine(link);
+            }
+
+            writer.WriteLine();
         }
     }
 }
