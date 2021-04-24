@@ -13,7 +13,6 @@ namespace Decoder
     {
         static void Main(string[] args)
         {
-            var pathToExampleFolder = AppDomain.CurrentDomain.BaseDirectory;
             var inputFileName = ConfigurationManager.AppSettings["InputFileName"];
             var outputFileName = ConfigurationManager.AppSettings["OutputFileName"];
 
