@@ -19,6 +19,7 @@ namespace TelephoneBook
             string attributeName = ConfigurationManager.AppSettings["AttributeName"];
             string query = ConfigurationManager.AppSettings["Query"];
 
+            CreateXmlFile(fileName);
             GetPhoneNumbersViaXMLReader(fileName, tagName, attributeName);
 
             Console.WriteLine(new string('-', 15));
@@ -26,6 +27,28 @@ namespace TelephoneBook
             GetPhoneNumbersViaXPath(fileName, query);
 
             Console.ReadKey();
+        }
+
+        static void CreateXmlFile(string fileName)
+        {
+            var xmlWriter = new XmlTextWriter(fileName, null);
+
+            xmlWriter.Formatting = Formatting.Indented;
+
+            xmlWriter.WriteStartDocument();
+            xmlWriter.WriteStartElement("MyContacts");
+
+            xmlWriter.WriteStartElement("Contact");
+            xmlWriter.WriteStartAttribute("TelephoneNumber");
+            xmlWriter.WriteString("3752912345678");
+            xmlWriter.WriteEndAttribute();
+            xmlWriter.WriteString("Andrey");
+            xmlWriter.WriteEndElement();
+            xmlWriter.WriteEndElement();
+
+            xmlWriter.WriteEndDocument();
+
+            xmlWriter.Close();
         }
 
         static void GetPhoneNumbersViaXMLReader(string fileName, string tagName, string attributeName)
