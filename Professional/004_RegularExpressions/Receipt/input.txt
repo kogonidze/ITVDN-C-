@@ -1,0 +1,4 @@
+﻿bread - 2.10
+milk - 2.25
+bananas - 3.99
+oil - 4.65
