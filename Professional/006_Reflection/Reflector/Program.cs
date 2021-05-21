@@ -19,6 +19,7 @@ namespace ReflectorNS
             var assembly = Reflector.LoadAssembly(assemblyFile);
 
             Reflector.PrintAssemblyInfo(assembly);
+            Reflector.PrintTypesInfo(assembly);
 
             Console.ReadKey();
         }
