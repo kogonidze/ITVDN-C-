@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector", "006_Reflection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperature", "006_Reflection\Temperature\Temperature.csproj", "{53399E08-EB67-46C9-80DB-C6DD67FB897A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithTemperatureReflection", "006_Reflection\WorkWithTemperatureReflection\WorkWithTemperatureReflection.csproj", "{19F4CF98-FB3C-46D6-BE39-0A43D95CA52F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,10 @@ Global
 		{53399E08-EB67-46C9-80DB-C6DD67FB897A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53399E08-EB67-46C9-80DB-C6DD67FB897A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53399E08-EB67-46C9-80DB-C6DD67FB897A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F4CF98-FB3C-46D6-BE39-0A43D95CA52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F4CF98-FB3C-46D6-BE39-0A43D95CA52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F4CF98-FB3C-46D6-BE39-0A43D95CA52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F4CF98-FB3C-46D6-BE39-0A43D95CA52F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -169,6 +175,7 @@ Global
 		{CEF1A6C0-8200-408D-BCC9-AFAE40683455} = {18F8EDCD-B0FA-400D-93AE-DB226323E13C}
 		{3AB6DFE5-B4F8-4706-B9AF-42318A7209B1} = {75F78453-7DCC-4861-BBAE-D452568210B9}
 		{53399E08-EB67-46C9-80DB-C6DD67FB897A} = {75F78453-7DCC-4861-BBAE-D452568210B9}
+		{19F4CF98-FB3C-46D6-BE39-0A43D95CA52F} = {75F78453-7DCC-4861-BBAE-D452568210B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15D054F4-B21D-48A8-A04B-1F1F377AAC7A}
