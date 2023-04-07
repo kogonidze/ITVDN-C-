@@ -5,10 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001_Classes", "001_Classes", "{B6E6A486-CCBD-4AC4-B797-8F795FFC5DE4}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
+		001_Classes\README.md = 001_Classes\README.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rectangle", "001_Classes\Rectangle\Rectangle.csproj", "{60014662-0E56-4BFD-9F02-9C1DEE87294A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book", "001_Classes\Book\Book.csproj", "{391EE042-4DB0-44C0-BC29-A9F22163B050}"
 EndProject
@@ -158,16 +156,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithMyDictionary", "018
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Address", "001_Classes\Address\Address.csproj", "{394A4E0C-FAC6-4080-9890-5D15D7C08AE8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rectangle", "001_Classes\Rectangle\Rectangle.csproj", "{1FD03C36-C1D5-4B2E-8CDD-86DE040003EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{60014662-0E56-4BFD-9F02-9C1DEE87294A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60014662-0E56-4BFD-9F02-9C1DEE87294A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60014662-0E56-4BFD-9F02-9C1DEE87294A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60014662-0E56-4BFD-9F02-9C1DEE87294A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{391EE042-4DB0-44C0-BC29-A9F22163B050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{391EE042-4DB0-44C0-BC29-A9F22163B050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{391EE042-4DB0-44C0-BC29-A9F22163B050}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -392,12 +388,15 @@ Global
 		{394A4E0C-FAC6-4080-9890-5D15D7C08AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{394A4E0C-FAC6-4080-9890-5D15D7C08AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{394A4E0C-FAC6-4080-9890-5D15D7C08AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD03C36-C1D5-4B2E-8CDD-86DE040003EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD03C36-C1D5-4B2E-8CDD-86DE040003EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD03C36-C1D5-4B2E-8CDD-86DE040003EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD03C36-C1D5-4B2E-8CDD-86DE040003EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{60014662-0E56-4BFD-9F02-9C1DEE87294A} = {B6E6A486-CCBD-4AC4-B797-8F795FFC5DE4}
 		{391EE042-4DB0-44C0-BC29-A9F22163B050} = {B6E6A486-CCBD-4AC4-B797-8F795FFC5DE4}
 		{8F776811-0BB1-4AAF-86F4-40DDF4412E2D} = {B6E6A486-CCBD-4AC4-B797-8F795FFC5DE4}
 		{823E835A-A8C2-4310-8E01-0FA0F3F95408} = {4C9FD22E-A00B-4646-BB4A-978E2DECA6A8}
@@ -454,6 +453,7 @@ Global
 		{34F4D6BB-5E8E-46A5-9F1F-05F14C19CABE} = {86DDDFE6-2090-417D-B41D-30BBF963710C}
 		{0E9FF933-5E5F-4A5A-ABC3-7012197C7DFD} = {86DDDFE6-2090-417D-B41D-30BBF963710C}
 		{394A4E0C-FAC6-4080-9890-5D15D7C08AE8} = {B6E6A486-CCBD-4AC4-B797-8F795FFC5DE4}
+		{1FD03C36-C1D5-4B2E-8CDD-86DE040003EC} = {B6E6A486-CCBD-4AC4-B797-8F795FFC5DE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
