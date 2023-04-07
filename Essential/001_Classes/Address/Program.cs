@@ -1,29 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AddressExercise;
 
-namespace Address
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Address address = new Address();
+var address = new Address();
 
-            address.Index = "230025";
-            address.Country = "Belarus";
-            address.City = "Hrodna";
-            address.Street = "Lenina";
-            address.House = "6";
+address.Index = "12345";
+address.Country = "Belarus";
+address.City = "Minsk";
+address.Street = "Kudykina";
+address.House = "1";
+address.Apartment = "1";
 
-            Console.WriteLine($"Index: {address.Index}");
-            Console.WriteLine($"Country: {address.Country}");
-            Console.WriteLine($"City: {address.City}");
-            Console.WriteLine($"Street: {address.Street}");
-            Console.WriteLine($"House: {address.House}");
-            Console.WriteLine($"Apartment: {address.Apartment}");
-        }
-    }
-}
+Console.WriteLine(address.ShowInfo());
+
+Console.ReadKey();

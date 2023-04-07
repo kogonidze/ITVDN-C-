@@ -1,26 +1,13 @@
-﻿using System;
+﻿namespace BookExercise;
 
-namespace Book
+internal class Author
 {
-    class Author
+    public string Data { get; set; }
+
+    public void Show()
     {
-        private string author;
-
-        public Author()
-        {
-            author = "Author of the book";
-        }
-
-        public Author(string author)
-        {
-            this.author = author;
-        }
-
-        public void Show()
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Author: \"{author}\"");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine($"Author: {Data}.");
+        Console.ForegroundColor = ConsoleColor.White;
     }
 }

@@ -1,28 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Polygon;
 
-namespace Polygon
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Figure triangle = new Figure(new Point(10,2), new Point(6,6), new Point(8,0));
-            Console.WriteLine($"The name of figure is {triangle.Name}");
-            triangle.PerimeterCalculator();
+var triangle = new Figure(new Point(10, 2, "A"), new Point(6, 6, "B"), new Point(8, 0, "C"));
+triangle.Name = "ABC";
+Console.WriteLine(triangle.ShowInfo());
 
-            Figure square = new Figure(new Point(-2, 4), new Point(2, 4), new Point(2, 0), new Point(-2, 0));
-            Console.WriteLine($"The name of figure is {square.Name}");
-            square.PerimeterCalculator();
+var square = new Figure(new Point(-2, 4, "A"), new Point(2, 4, "B"),
+    new Point(2, 0, "C"), new Point(-2, 0, "D"));
 
-            Figure pentagon = new Figure(new Point(-4, 4), new Point(6, 8), new Point(8, 4), new Point(4, 2), new Point(-2, 2));
-            Console.WriteLine($"The name of figure is {pentagon.Name}");
-            pentagon.PerimeterCalculator();
+square.Name = "ABCD";
+Console.WriteLine(square.ShowInfo());
 
-            Console.ReadKey();
-        }
-    }
-}
+var pentagon = new Figure(new Point(-4, 4, "A"), new Point(6, 8, "B"),
+    new Point(8, 4, "C"), new Point(4, 2, "D"), new Point(-2, 2, ""));
+
+pentagon.Name = "ABCDE";
+Console.WriteLine(pentagon.ShowInfo());
+
+Console.ReadKey();

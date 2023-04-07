@@ -1,26 +1,13 @@
-﻿using System;
+﻿namespace BookExercise;
 
-namespace Book
+internal class Content
 {
-    class Content
+    public string Data { get; set; }
+
+    public void Show()
     {
-        private string content;
-
-        public Content()
-        {
-            content = "Content of the book";
-        }
-
-        public Content(string content)
-        {
-            this.content = content;
-        }
-
-        public void Show()
-        {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"Content: \"{content}\"");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine($"Content: {Data}.");
+        Console.ForegroundColor = ConsoleColor.White;
     }
 }

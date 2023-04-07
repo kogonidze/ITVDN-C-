@@ -1,27 +1,16 @@
-﻿using System;
+﻿using BookExercise;
 
-namespace Book
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Book HarryPotter = new Book("Harry Potter and the Chamber of secrets", "J.K.Rowling",
-                "Chapter One: The worst birthday");
-            HarryPotter.Show();
-            Console.WriteLine(new string('-', 30));
+var book = new Book();
 
-            Book CodeComplete = new Book();
-            CodeComplete.Show();
-            Console.WriteLine(new string('-', 30));
+Console.WriteLine("Enter the author of the book: ");
+book.Author = Console.ReadLine();
 
-            CodeComplete.Author = "Steve McConnel";
-            CodeComplete.Title = "Code Complete";
-            CodeComplete.Content = "Introduction to ...";
+Console.WriteLine("Enter the title of the book: ");
+book.Title = Console.ReadLine();
 
-            CodeComplete.Show();
-            Console.WriteLine(new string('-', 30));
+Console.WriteLine("Enter the content of the book: ");
+book.Content = Console.ReadLine();
 
-        }
-    }
-}
+book.Show();
+
+Console.ReadKey();
