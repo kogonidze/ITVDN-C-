@@ -1,30 +1,22 @@
-﻿using System;
+﻿using RectangleExercise;
 
-namespace Rectangle
+Console.WriteLine("Enter side1 value: ");
+
+if (!double.TryParse(Console.ReadLine(), out double side1))
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Enter the first length value of rectangle: ");
-            var input1 = Console.ReadLine();
-
-            Console.WriteLine("Enter the second length value of rectangle: ");
-            var input2 = Console.ReadLine();
-
-            if (int.TryParse(input1, out int length1) && int.TryParse(input2, out int length2))
-            {
-                Rectangle rectangle = new Rectangle(length1, length2);
-
-                Console.WriteLine($"The area of the rectangle is {rectangle.Area}");
-                Console.WriteLine($"The perimeter of the rectangle is {rectangle.Perimeter}");
-            }
-            else
-            {
-                Console.WriteLine("You entered incorrect data!");
-            }
-
-            Console.ReadKey();
-        }
-    }
+    Console.WriteLine("Side1 must be a double value!");
+    Environment.Exit(-1);
 }
+
+Console.WriteLine("Enter side2 value: ");
+
+if (!double.TryParse(Console.ReadLine(), out double side2))
+{
+    Console.WriteLine("Side2 must be a double value!");
+    Environment.Exit(-1);
+}
+
+var rectangle = new Rectangle(side1, side2);
+Console.WriteLine(rectangle.ShowInfo());
+
+Console.ReadKey();

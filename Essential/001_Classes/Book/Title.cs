@@ -1,26 +1,13 @@
-﻿using System;
+﻿namespace BookExercise;
 
-namespace Book
+internal class Title
 {
-    class Title
+    public string Data { get; set; }
+
+    public void Show()
     {
-        private string title;
-
-        public Title()
-        {
-            title = "Title of the book";
-        }
-
-        public Title(string title)
-        {
-            this.title = title;
-        }
-
-        public void Show()
-        {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"Title: \"{title}\"");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"Title: {Data}.");
+        Console.ForegroundColor = ConsoleColor.White;
     }
 }

@@ -1,62 +1,45 @@
-﻿namespace Book
+﻿namespace BookExercise;
+
+internal class Book
 {
-    class Book
+    Author author;
+    Content content;
+    Title title;
+
+    void InitializeBook()
     {
-        private Title title;
-        private Author author;
-        private Content content;
+        author = new Author();
+        content = new Content();
+        title = new Title();
+    }
 
-        public Book()
-        {
-            this.author = new Author("Author");
-            this.title = new Title("Title");
-            this.content = new Content("Content");
-        }
+    public Book()
+    {
+        InitializeBook();
+    }
 
-        public Book(string title)
-        {
-            this.title = new Title(title);
-        }
+    public string Author
+    {
+        get => author.Data;
+        set { author.Data = value; }
+    }
 
-        public Book(string author, string title) : this(title)
-        {
-            this.author = new Author(author);
-        }
+    public string Content
+    {
+        get => content.Data;
+        set { content.Data = value; }
+    }
 
-        public Book(string title, string author, string content) : this(author, title)
-        {
-            this.content = new Content(content);
-        }
+    public string Title
+    {
+        get => title.Data;
+        set { title.Data = value; }
+    }
 
-        public string Title
-        {
-            set
-            {
-                title = new Title(value);
-            }
-        }
-
-        public string Author
-        {
-            set
-            {
-                author = new Author(value);
-            }
-        }
-
-        public string Content
-        {
-            set
-            {
-                content = new Content(value);
-            }
-        }
-
-        public void Show()
-        {
-            author.Show();
-            title.Show();
-            content.Show();
-        }
+    public void Show()
+    {
+        author.Show();
+        title.Show();
+        content.Show();
     }
 }
