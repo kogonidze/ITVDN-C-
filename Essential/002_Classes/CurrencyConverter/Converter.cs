@@ -14,24 +14,20 @@ internal class Converter
     }
 
     public double SoldBYN(double amount, Currency target)
-    {
-        return target switch
+        => target switch
         {
             Currency.USD => amount / usd,
             Currency.EUR => amount / eur,
             Currency.RUB => amount / rub,
             _ => throw new InvalidOperationException("Not supported target currency!"),
         };
-    }
 
     public double BuyBYN(double amount, Currency source) 
-    {
-        return source switch
+        => source switch
         {
             Currency.USD => amount * usd,
             Currency.EUR => amount * eur,
             Currency.RUB => amount * rub,
             _ => throw new InvalidOperationException("Not supported source currency!"),
         };
-    }
 }
