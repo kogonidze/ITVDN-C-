@@ -1,22 +1,11 @@
-﻿using System;
-using Shared;
+﻿using CurrencyConverter;
 
-namespace CurrencyConverter
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var converter = new Converter(2.60, 3.02, 3.35);
+var converter = new Converter(2.92, 3.19, 0.0364);
 
-            Menu.StartWork(Constants.MenuText,
-                () => converter.Convert(Currency.USD, false),
-                () => converter.Convert(Currency.EUR, false),
-                () => converter.Convert(Currency.RUB, false),
-                () => converter.Convert(Currency.USD, true),
-                () => converter.Convert(Currency.EUR, true),
-                () => converter.Convert(Currency.RUB, true),
-                () => Environment.Exit(0));
-        }
-    }
-}
+Console.WriteLine(converter.BuyBYN(30000, Currency.RUB));
+Console.WriteLine(converter.BuyBYN(1000, Currency.EUR));
+
+Console.WriteLine(converter.SoldBYN(1000, Currency.RUB));
+Console.WriteLine(converter.SoldBYN(1000, Currency.USD));
+
+Console.ReadKey();
