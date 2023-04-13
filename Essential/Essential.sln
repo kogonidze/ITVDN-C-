@@ -20,6 +20,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Printer", "003_Inheritance\Printer\Printer.csproj", "{FDBD6AD4-B6A7-4FA9-A00E-122C2462DDBF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003_Inheritance", "003_Inheritance", "{21DC4FD3-D448-4991-B0E1-42AFA1D8395C}"
+	ProjectSection(SolutionItems) = preProject
+		003_Inheritance\README.md = 003_Inheritance\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classroom", "003_Inheritance\Classroom\Classroom.csproj", "{9FCDB817-5314-4DD4-BE07-6853DE3A06AC}"
 EndProject
@@ -157,9 +160,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyConverter", "002_Cl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryAndTaxes", "002_Classes\SalaryAndTaxes\SalaryAndTaxes.csproj", "{481298D3-3A83-4CE8-A4C9-1BA9F21335B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice", "002_Classes\Invoice\Invoice\Invoice.csproj", "{B28F56E6-332E-42F6-BF35-ED28AE1B5C44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invoice", "002_Classes\Invoice\Invoice\Invoice.csproj", "{B28F56E6-332E-42F6-BF35-ED28AE1B5C44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User", "002_Classes\User\User\User.csproj", "{A97F9766-5D5A-497C-B819-48FFC40F5E70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User", "002_Classes\User\User\User.csproj", "{A97F9766-5D5A-497C-B819-48FFC40F5E70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
