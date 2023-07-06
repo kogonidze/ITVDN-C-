@@ -23,6 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003_Inheritance", "003_Inhe
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "004_Abstraction", "004_Abstraction", "{FAA97D10-E754-4C10-A3F3-205B55E05303}"
+	ProjectSection(SolutionItems) = preProject
+		004_Abstraction\README.md = 004_Abstraction\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document", "004_Abstraction\Document\Document.csproj", "{AD4ACDF3-02D3-4995-8C1C-46FC994000CC}"
 EndProject
@@ -158,11 +161,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User", "002_Classes\User\Us
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassRoomApp", "003_Inheritance\ClassRoomApp\ClassRoomApp.csproj", "{CA1AFA65-298A-4439-A401-FA8C1CA76BC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleApp", "003_Inheritance\VehicleApp\VehicleApp.csproj", "{DDA46A60-69F5-4C0D-8647-2ED9FA3C2678}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleApp", "003_Inheritance\VehicleApp\VehicleApp.csproj", "{DDA46A60-69F5-4C0D-8647-2ED9FA3C2678}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentWorkerApp", "003_Inheritance\DocumentWorkerApp\DocumentWorkerApp.csproj", "{D69E637E-349E-47A3-8E21-549D74BDF01C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentWorkerApp", "003_Inheritance\DocumentWorkerApp\DocumentWorkerApp.csproj", "{D69E637E-349E-47A3-8E21-549D74BDF01C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrinterApp", "PrinterApp\PrinterApp.csproj", "{E46354C3-DFD7-4D43-BAFA-0748D1ACE132}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrinterApp", "003_Inheritance\PrinterApp\PrinterApp.csproj", "{6081ADC8-CFA1-4364-838E-39FEDC6E8259}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -394,10 +397,10 @@ Global
 		{D69E637E-349E-47A3-8E21-549D74BDF01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D69E637E-349E-47A3-8E21-549D74BDF01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D69E637E-349E-47A3-8E21-549D74BDF01C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E46354C3-DFD7-4D43-BAFA-0748D1ACE132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E46354C3-DFD7-4D43-BAFA-0748D1ACE132}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E46354C3-DFD7-4D43-BAFA-0748D1ACE132}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E46354C3-DFD7-4D43-BAFA-0748D1ACE132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6081ADC8-CFA1-4364-838E-39FEDC6E8259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6081ADC8-CFA1-4364-838E-39FEDC6E8259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6081ADC8-CFA1-4364-838E-39FEDC6E8259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6081ADC8-CFA1-4364-838E-39FEDC6E8259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -459,7 +462,7 @@ Global
 		{CA1AFA65-298A-4439-A401-FA8C1CA76BC2} = {21DC4FD3-D448-4991-B0E1-42AFA1D8395C}
 		{DDA46A60-69F5-4C0D-8647-2ED9FA3C2678} = {21DC4FD3-D448-4991-B0E1-42AFA1D8395C}
 		{D69E637E-349E-47A3-8E21-549D74BDF01C} = {21DC4FD3-D448-4991-B0E1-42AFA1D8395C}
-		{E46354C3-DFD7-4D43-BAFA-0748D1ACE132} = {21DC4FD3-D448-4991-B0E1-42AFA1D8395C}
+		{6081ADC8-CFA1-4364-838E-39FEDC6E8259} = {21DC4FD3-D448-4991-B0E1-42AFA1D8395C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0FBB6B3-5AAE-4DF4-A0A7-4755957AD656}
