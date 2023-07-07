@@ -28,6 +28,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "004_Abstraction", "004_Abst
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "005_ArraysAndIndexers", "005_ArraysAndIndexers", "{55D56B2A-7779-44AB-8B36-4F235BACB380}"
+	ProjectSection(SolutionItems) = preProject
+		005_ArraysAndIndexers\README.md = 005_ArraysAndIndexers\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageDictionary", "005_ArraysAndIndexers\LanguageDictionary\LanguageDictionary.csproj", "{C0448EB1-28AE-438F-A5FB-97650411486B}"
 EndProject
@@ -161,11 +164,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentWorkerApp", "003_In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrinterApp", "003_Inheritance\PrinterApp\PrinterApp.csproj", "{6081ADC8-CFA1-4364-838E-39FEDC6E8259}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentApp", "004_Abstraction\DocumentApp\DocumentApp.csproj", "{7F53B959-A41B-4CA5-8D84-84CE62C5C8E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentApp", "004_Abstraction\DocumentApp\DocumentApp.csproj", "{7F53B959-A41B-4CA5-8D84-84CE62C5C8E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentHandlerApp", "004_Abstraction\DocumentHandlerApp\DocumentHandlerApp.csproj", "{16A41112-6249-44E6-A169-7CE5EB59416E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentHandlerApp", "004_Abstraction\DocumentHandlerApp\DocumentHandlerApp.csproj", "{16A41112-6249-44E6-A169-7CE5EB59416E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerApp", "004_Abstraction\PlayerApp\PlayerApp.csproj", "{DA69CA4E-140A-491D-8850-1C15CEA361EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerApp", "004_Abstraction\PlayerApp\PlayerApp.csproj", "{DA69CA4E-140A-491D-8850-1C15CEA361EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
